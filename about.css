@@ -1,0 +1,193 @@
+/* ================= ABOUT SECTION ================= */
+
+.about{
+    width: 100%;
+
+    padding: 120px 120px;
+
+    background-color: #07141d;
+}
+
+/* CONTAINER */
+
+.about-container{
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+/* LEFT SIDE */
+
+.about-left{
+    width: 55%;
+}
+
+.about-left h2{
+    font-size: 42px;
+
+    margin-bottom: 30px;
+
+    color: #ffffff;
+
+    position: relative;
+}
+
+/* Orange underline effect */
+
+.about-left h2::after{
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -10px;
+
+    width: 80px;
+    height: 4px;
+
+    background-color: #ff6b4a;
+
+    border-radius: 10px;
+}
+
+.about-left p{
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #c7c7c7;
+
+    margin-bottom: 22px;
+}
+
+/* RIGHT SIDE */
+
+.about-right{
+    width: 45%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+/* CARDS */
+
+.about-card{
+    background-color: #0d1f2b;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.about-card:hover{
+    transform: translateY(-6px);
+
+    border-color: #ff6b4a;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* CARD HEADING */
+
+.about-card h3{
+    color: #ff6b4a;
+
+    margin-bottom: 12px;
+
+    font-size: 22px;
+}
+
+/* CARD TEXT */
+
+.about-card p{
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+/* ================= EDUCATION ================= */
+
+.education{
+    margin-top: 50px;
+}
+
+.education h3{
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+}
+
+.edu-item{
+    margin-bottom: 30px;
+
+    padding-left: 20px;
+
+    border-left: 3px solid #ff6b4a;
+}
+
+.edu-item h4{
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.edu-item p{
+    color: #c7c7c7;
+
+    margin-bottom: 6px;
+}
+
+.edu-item span{
+    color: #ff6b4a;
+
+    font-size: 14px;
+}
+.edu-item a{
+    color: #ff6b4a;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.edu-item a:hover{
+    color: #ffffff;
+}
+
+/* ================= STRENGTHS ================= */
+
+.strength-list{
+    margin-top: 15px;
+
+    padding-left: 18px;
+}
+
+.strength-list li{
+    margin-bottom: 12px;
+
+    color: #ffffff;
+
+    line-height: 1.6;
+}
