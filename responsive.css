@@ -1,17 +1,31 @@
 /* =========================
-   RESPONSIVE CSS
+   MOBILE RESPONSIVE CSS
 ========================= */
 
-@media (max-width: 768px) {
+@media screen and (max-width:768px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     body{
         overflow-x: hidden;
     }
 
-    /* NAVBAR */
+    /* =========================
+       NAVBAR
+    ========================= */
 
     .navbar{
-        padding: 15px 20px;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: #021c2a;
     }
 
     .nav-content{
@@ -21,7 +35,9 @@
     }
 
     .logo{
-        font-size: 24px;
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
     }
 
     .menu-toggle{
@@ -32,153 +48,195 @@
     }
 
     .nav-links{
-        display: none;
-        flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: 20px;
-        background: #111827;
-        padding: 20px;
-        border-radius: 10px;
-        gap: 15px;
-        width: 180px;
-        text-align: center;
+        top: 75px;
+        right: -100%;
+        width: 220px;
+        background: #021c2a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        gap: 20px;
+        transition: 0.4s ease;
     }
 
     .nav-links.active{
-        display: flex;
+        right: 0;
     }
 
-    /* HERO SECTION */
-
-    .hero{
-        padding: 40px 20px;
-        min-height: auto;
+    .nav-links li{
+        list-style: none;
     }
 
-    .hero-content{
+    .nav-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* =========================
+       HOME SECTION
+    ========================= */
+
+    .home{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
-        gap: 50px;
-        padding-top: 100px;
+        padding: 120px 20px 60px;
+        height: auto;
+        gap: 40px;
     }
 
-    .hero-text{
+    .home-content{
         width: 100%;
     }
 
-    .hero-text h1{
-        font-size: 60px;
-        line-height: 1.1;
+    .home-content h1{
+        font-size: 58px;
+        line-height: 65px;
     }
 
-    .hero-text h2{
-        font-size: 42px;
-        line-height: 1.2;
+    .home-content h3{
+        font-size: 28px;
+        margin-top: 10px;
     }
 
-    .intro{
-        font-size: 24px;
+    .home-content p{
+        font-size: 16px;
+        line-height: 28px;
+        margin-top: 15px;
     }
 
-    /* BUTTONS */
+    /* =========================
+       BUTTONS
+    ========================= */
 
-    .hero-buttons{
+    .btn-box{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 15px;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
-    .btn-primary,
-    .btn-outline{
+    .btn-box a{
         width: 220px;
+        padding: 14px;
         text-align: center;
-        padding: 14px 20px;
+        text-decoration: none;
+        border-radius: 8px;
     }
 
-    /* IMAGE */
+    /* =========================
+       HOME IMAGE
+    ========================= */
 
-    .hero-image{
+    .home-img{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .hero-image img{
-        width: 320px;
-        max-width: 90%;
-        height: auto;
+    .home-img img{
+        width: 300px;
+        max-width: 100%;
     }
 
-    /* ABOUT SECTION */
+    /* =========================
+       ABOUT SECTION
+    ========================= */
 
-    .about-section{
-        padding: 80px 20px;
+    .about{
+        width: 100%;
+        padding: 70px 20px;
     }
 
     .about-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 40px;
     }
 
-    .about-left,
-    .about-right{
+    .about-text{
         width: 100%;
     }
 
-    .about-left h2{
+    .about-text h2{
         font-size: 42px;
-        text-align: center;
+        line-height: 55px;
     }
 
-    .about-left p{
-        font-size: 16px;
-        line-height: 1.8;
-        text-align: center;
+    .about-text p{
+        font-size: 18px;
+        line-height: 34px;
+        margin-top: 20px;
     }
 
-    .info-card{
+    .about-image{
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    /* EXPERIENCE */
+    .about-image img{
+        width: 260px;
+        max-width: 100%;
+    }
 
-    .experience-section{
-        padding: 80px 20px;
+    /* =========================
+       EXPERIENCE SECTION
+    ========================= */
+
+    .experience{
+        padding: 70px 20px;
     }
 
     .experience-container{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
     }
 
-    .experience-card{
+    .experience-box{
         width: 100%;
     }
 
-    /* CONTACT */
+    /* =========================
+       CONTACT SECTION
+    ========================= */
 
-    .contact-section{
-        padding: 80px 20px;
+    .contact{
+        padding: 70px 20px;
     }
 
     .contact-container{
         display: flex;
         flex-direction: column;
         gap: 30px;
-        text-align: center;
     }
 
-    .social-icons{
-        justify-content: center;
-        flex-wrap: wrap;
+    .contact form{
+        width: 100%;
+    }
+
+    .contact input,
+    .contact textarea{
+        width: 100%;
+    }
+
+    /* =========================
+       RESUME BUTTON
+    ========================= */
+
+    .resume-btn{
+        width: 220px;
     }
 
 }
