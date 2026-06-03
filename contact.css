@@ -83,9 +83,9 @@
 
 .contact-card{
     background-color: #0d1f2b;
-
+    height: 100%;
     padding: 35px;
-
+    cursor: default;
     border-radius: 16px;
 
     border: 1px solid rgba(255,255,255,0.05);
@@ -188,4 +188,6 @@
     color: #8a8a8a;
 
     font-size: 14px;
+
+    letter-spacing: 0.5px;
 }

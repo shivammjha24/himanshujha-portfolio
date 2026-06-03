@@ -3,39 +3,36 @@
     body{
         overflow-x: hidden;
     }
-
-    /* NAVBAR */
-
-    .navbar{
-        padding: 15px 20px;
+    *{
+    max-width: 100%;
     }
 
-    .nav-content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    /* ================= NAVBAR ================= */
+
+    .navbar{
+        padding: 18px 20px;
+    }
+
+    .logo{
+        font-size: 18px;
     }
 
     .menu-toggle{
         display: block;
-        font-size: 28px;
-        color: white;
-        cursor: pointer;
     }
 
     .nav-links{
         position: fixed;
         top: 70px;
         right: -100%;
-        width: 220px;
-        height: auto;
-        background: #021c2a;
-        display: flex;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #0b1c26;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
         padding: 30px 0;
-        transition: 0.4s;
+        transition: 0.4s ease;
         z-index: 999;
     }
 
@@ -43,126 +40,159 @@
         right: 0;
     }
 
-    .nav-links li{
-        list-style: none;
+    /* ================= HERO ================= */
+
+    .hero{
+        padding: 120px 20px 60px;
     }
 
-    .nav-links li a{
-        font-size: 18px;
-    }
-
-    /* HOME */
-
-    .home{
-        display: flex;
+    .hero-content{
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 120px 20px 50px;
         text-align: center;
-        gap: 40px;
-        height: auto;
+        gap: 50px;
     }
 
-    .home-content{
+    .hero-text{
         width: 100%;
     }
 
-    .home-content h1{
-        font-size: 60px;
-        line-height: 65px;
+    .hero-text h1{
+        font-size: 38px;
     }
 
-    .home-content h3{
-        font-size: 26px;
+    .intro{
+        padding-left: 0;
+        font-size: 20px;
     }
 
-    .home-content p{
-        font-size: 16px;
+    .hero-text h2{
+        font-size: 28px;
+        padding-bottom: 30px;
     }
 
-    .btn-box{
-        display: flex;
+    .hero-buttons{
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin-top: 30px;
     }
 
-    .btn-box a{
+    .btn-primary,
+    .btn-outline{
         width: 220px;
         text-align: center;
     }
 
-    .home-img{
+    .hero-image{
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
-    .home-img img{
+    .hero-image img{
         width: 280px;
-        max-width: 100%;
+        transform: none;
     }
 
-    /* ABOUT */
+    .hero-image::before{
+        width: 280px;
+        height: 280px;
+        border-width: 8px;
+    }
+
+    .hero-image::after{
+        width: 320px;
+        height: 320px;
+    }
+
+    /* ================= ABOUT ================= */
 
     .about{
-        padding: 60px 20px;
+        padding: 80px 20px;
     }
 
     .about-container{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         gap: 40px;
     }
 
-    .about-text{
+    .about-left,
+    .about-right{
         width: 100%;
     }
 
-    .about-text h2{
-        font-size: 42px;
+    .about-left h2{
+        text-align: center;
     }
 
-    .about-text p{
-        font-size: 17px;
-        line-height: 30px;
+    .about-left h2::after{
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .about-image img{
-        width: 260px;
-        max-width: 100%;
+    .about-left p{
+        text-align: justify;
     }
 
-    /* EXPERIENCE */
-
-    .experience-container{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .about-card{
+        padding: 25px;
     }
 
-    .experience-box{
-        width: 100%;
+    /* ================= EXPERIENCE ================= */
+
+    .experience{
+        padding: 80px 20px;
     }
 
-    /* CONTACT */
-
-    .contact-container{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    .experience-container h2{
+        text-align: center;
     }
 
-    .contact form{
-        width: 100%;
+    .experience-container h2::after{
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .contact input,
-    .contact textarea{
-        width: 100%;
+    .timeline{
+        margin-left: 10px;
     }
+
+    .timeline-item{
+        padding-left: 35px;
+    }
+
+    .timeline-content{
+        padding: 20px;
+    }
+
+    .timeline-content h3{
+        font-size: 20px;
+    }
+
+    .timeline-content h4{
+        font-size: 16px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact{
+        padding: 80px 20px;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card{
+        padding: 25px;
+        overflow-wrap: break-word;
+    }
+
+    .social-links{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .social-links a{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
 }
